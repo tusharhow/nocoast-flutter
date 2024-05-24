@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nocoast_flutter/app/views/bottom_nav_bar.dart';
+import 'package:nocoast_flutter/app/views/main/home_page.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -90,9 +92,14 @@ class _LoginScreenState extends State<LoginScreen> {
                       width: double.infinity,
                       child: ElevatedButton(
                         onPressed: () {
-                          if (_formKey.currentState!.validate()) {
-                            // Perform login action
-                          }
+                          // if (_formKey.currentState!.validate()) {
+
+                          // }
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const MyBottomNavBar()),
+                          );
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.black,

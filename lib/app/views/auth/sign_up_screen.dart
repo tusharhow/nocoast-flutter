@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nocoast_flutter/app/views/auth/login_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -132,7 +133,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       child: ElevatedButton(
                         onPressed: () {
                           if (_formKey.currentState!.validate()) {
-                            // Perform sign-up action
+                            Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const LoginScreen()),
+                        );
                           }
                         },
                         style: ElevatedButton.styleFrom(
