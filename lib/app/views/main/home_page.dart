@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         title:
-            const Text('Music Player', style: TextStyle(color: Colors.white)),
+            const Text('Nocoast Player', style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.black,
       ),
       body: Column(

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nocoast_flutter/app/views/auth/login_screen.dart';
-import 'package:nocoast_flutter/app/views/main/home_page.dart';
 import 'package:nocoast_flutter/app/views/splash/splash_screen.dart';
 
 void main() {
@@ -13,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Nocoast Player',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),

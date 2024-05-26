@@ -1,9 +1,8 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:nocoast_flutter/app/utils/song_data.dart';
 import 'dart:math' as math;
-
 import 'package:nocoast_flutter/app/utils/song_util.dart';
+
 
 class PlayerPage extends StatefulWidget {
   const PlayerPage(

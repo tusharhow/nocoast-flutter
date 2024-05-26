@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nocoast_flutter/app/views/live_chat._screen.dart';
 import 'package:nocoast_flutter/app/views/main/home_page.dart';
+import 'package:nocoast_flutter/app/views/profile_screen.dart';
 
 class MyBottomNavBar extends StatefulWidget {
   const MyBottomNavBar({super.key});
@@ -11,8 +13,8 @@ class MyBottomNavBar extends StatefulWidget {
 class _MyBottomNavBarState extends State<MyBottomNavBar> {
   final List<Widget> _screens = const [
     HomePage(),
-    Placeholder(),
-    Placeholder(),
+    LiveChatScreen(),
+    ProfileScreen(),
   ];
   int _currentIndex = 0;
 
@@ -33,8 +35,8 @@ class _MyBottomNavBarState extends State<MyBottomNavBar> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Search',
+            icon: Icon(Icons.chat),
+            label: 'Chat',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
